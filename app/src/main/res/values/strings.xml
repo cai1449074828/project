@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">project</string>
+    <string name="title_activity_show_pic">ShowPicActivity</string>
+    <string name="takephoto">takephoto</string>
+    <string name="success">success</string>
+    <string name="content">content</string>
+    <string name="menu">menu</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.blq.zzc.project.WuDianLingActivity"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view4">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/WuDianLing_Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/WuDianLing_DrawerLayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/WuDianLing_FloatingActionButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/ic_account_circle_black_18dp"
+            app:backgroundTint="#ff87ffeb"
+            app:rippleColor="#33728dff"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            android:layout_marginEnd="78dp"
+            android:layout_alignParentEnd="true"
+            android:transitionName="floatButton"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/WuDianLing_FloatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_backup_black_18dp"
+            app:backgroundTint="#ff87ffeb"
+            app:rippleColor="#33728dff"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="51dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WuDianLing_FloatingActionButton1"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@mipmap/ic_launcher"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@mipmap/ic_launcher"
+                android:elevation="5dip"
+                android:tint="@android:color/holo_blue_light"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@mipmap/ic_launcher"
+                android:elevation="5dip"
+                android:tint="@android:color/holo_blue_light"
+                android:tintMode="add"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                android:src="@mipmap/ic_launcher"
+                android:elevation="5dp"
+                android:tint="@android:color/holo_blue_light"
+                android:tintMode="multiply"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal"
+                android:text="你好"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal"
+                android:elevation="10dp"
+                android:text="我是ZZC"
+                android:gravity="center"/>
+        </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="菜单界面"/>
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

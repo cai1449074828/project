@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blq.zzc.project.ListActivity"
+    android:background="@color/cardview_dark_background">
+
+    <com.blq.zzc.project.View.MyListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:divider="@color/cardview_dark_background"
+        android:dividerHeight="3dp"
+        android:scrollbars="none"
+        android:listSelector="@android:color/holo_blue_bright"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_backup_black_18dp"
+        android:id="@+id/floatingActionButton"
+        android:layout_marginTop="1400px"
+        android:layout_marginLeft="900px" app:backgroundTint="@android:color/background_light"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_swap_vertical_circle_black_18dp"
+        android:id="@+id/floatingActionButton_add"
+        android:layout_marginTop="1200px"
+        android:layout_marginLeft="900px" app:backgroundTint="@android:color/background_light"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView_empty"
+        app:srcCompat="@drawable/ic_swap_vertical_circle_black_18dp"
+    />
+    //        android:divider="@android:color/white"
+</RelativeLayout>
